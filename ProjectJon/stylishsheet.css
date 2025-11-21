@@ -1,0 +1,62 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+:root {
+    --len: 148ch;
+    --bgi: linear-gradient(to right, #353535 20%, #313131 40%, #292929 60%, #232323 80%, #1a191a 100%);
+}
+
+.title {
+    width: fit-content;
+    min-width: fit-content;
+    text-align: center;
+    min-height: 100px;
+    margin-left: 50%;
+    transform: translate(-50%, 10%);
+
+}
+
+.funny {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #ff0000 0%, #ff9a00 10%, #d1de21 20%, #4fdc4a 30%, #3fdad8 40%, #2fc9e2 50%, #1c7fee 60%, #5f15f2 70%, #ba0cf8 80%, #fb07d9 90%, #ff0000 100%);
+    animation: move 3s linear infinite;
+}
+
+.construction {
+    margin-top: 100px;
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
+    font-style: normal;
+    margin-left: -87%;
+}
+
+body {
+    background-color: #232323;
+    font-family: monospace;
+    font-size: 25px
+}
+.underground {
+    font-family: "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+}
+.link-underground:hover {
+    width: var(--len);
+    margin: 0 auto;
+    background-image: var(--bgi); 
+    background-position: 0 0, 0 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move 12s linear infinite;
+}
+.link-underground {
+    text-decoration: none;
+    background-image: var(--bgi);
+    background-position: var(--len) 0, 0 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes move {
+    to {
+        background-position: var(--len) 0, 0 0;
+    }
+}
