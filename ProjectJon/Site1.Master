@@ -20,6 +20,9 @@
             <span>
                 <a class="link-underground" href="underground.aspx">Steam Underground</a>
             </span>
+            <span>
+                <a class="myrient" href="myrient.aspx">Myrient</a>
+            </span>
         </div>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

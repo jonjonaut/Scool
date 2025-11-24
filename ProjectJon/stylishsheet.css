@@ -5,6 +5,16 @@
     --bgi: linear-gradient(to right, #353535 20%, #313131 40%, #292929 60%, #232323 80%, #1a191a 100%);
 }
 
+p {
+    color: white;
+}
+.hyperline {
+    text-decoration: none
+}
+.hyperline:hover {
+    text-decoration: underline;
+}
+
 .title {
     text-align: center;
     width: fit-content;
