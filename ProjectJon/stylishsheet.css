@@ -6,13 +6,15 @@
 }
 
 .title {
+    text-align: center;
     width: fit-content;
     min-width: fit-content;
     text-align: center;
     min-height: 100px;
-    margin-left: 50%;
-    transform: translate(-50%, 10%);
-
+    transform: translate(0%, -10%);
+    margin-top: -50px;
+    padding-bottom: 40px;
+    margin: auto;
 }
 
 .funny {
@@ -23,17 +25,20 @@
 }
 
 .construction {
-    margin-top: 100px;
+    margin-top: -20px;
     font-size: 20px;
     font-family: "Roboto Slab", serif;
     font-style: normal;
-    margin-left: -87%;
+    margin-left: -50%;
 }
 
 body {
     background-color: #232323;
     font-family: monospace;
     font-size: 25px
+}
+.panel {
+    padding-bottom: 20px;
 }
 .underground {
     font-family: "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
