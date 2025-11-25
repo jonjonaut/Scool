@@ -2,21 +2,23 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
- <div class="title">
-     <h1>
-     <span><pre style="font: 20px/18px monospace; color: white;">
+    <div class="title">
+        <h1>
+            <span><pre style="font: 40px/36px monospace; color: white;">
 ______  ___              _____            _____ 
 ___   |/  /____  ___________(_)_____________  /_
 __  /|_/ /__  / / /_  ___/_  /_  _ \_  __ \  __/
 _  /  / / _  /_/ /_  /   _  / /  __/  / / / /_  
 /_/  /_/  _\__, / /_/    /_/  \___//_/ /_/\__/  
-          /____/                                
+            /____/                                
 
-</pre></span>
-     <hr/>
-     <marquee class="construction funny" truespeed="" scrolldelay="40" scrollamount="3" style="position: absolute">Under Construction</marquee>
-     </h1>
+            </pre></span>
+            <hr/>
+            <marquee class="construction funny" truespeed="" scrolldelay="40" scrollamount="3" style="position: absolute">Under Construction</marquee>
+        </h1>   
+    </div> 
      
+
      <div>
          <p>
              <a class="hyperline" href="https://myrient.erista.me">Myrient</a> is undoubtfully the best source of ROMs for everything that does not include this generation of Console Games. Ad-Free 
@@ -26,7 +28,4 @@ _  /  / / _  /_/ /_  /   _  / /  __/  / / / /_
          </p>
          
      </div>
-
- </div>
-
 </asp:Content>

@@ -15,16 +15,16 @@
     <form runat="server">
         <div class="panel" style="text-decoration: none">
             <span>
-                <a href="Home.aspx">Home</a>
+                <a class="standard" href="Home.aspx">Home</a>
             </span>
             <span>
                 <a class="link-underground" href="underground.aspx">Steam Underground</a>
             </span>
             <span>
-                <a class="myrient" href="myrient.aspx">Myrient</a>
+                <a class="standard" href="myrient.aspx">Myrient</a>
             </span>
             <span>
-                <a class="torrentleech" href="torrentleech.aspx">TorrentLeech</a>
+                <a class="standard" href="torrentleech.aspx">TorrentLeech</a>
             </span>
         </div>
         <div>

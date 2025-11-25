@@ -5,12 +5,32 @@
     <img src="images/underground.png"/>
 
     <div class="title">
-        <h1>
+        <h1 id="title">
         <span>The Steam Underground</span>
         <hr/>
         <marquee class="construction funny" truespeed="" scrolldelay="40" scrollamount="3" style="position: absolute">Under Construction</marquee>
         </h1>
         
+    </div>
+
+    <div id="tabler" class="tabler" style="margin-top: -14.5%"><div class="tablertitle"><h2>Contents</h2></div>
+        <ul>
+            <li>
+                <a href="#title">
+                    <span>1</span>  <span class="tablertext">Steam Underground</span>
+
+                </a>
+                <ul>
+                   
+                    <li>
+                        <a href="#background">
+                            <span>2</span>  <spam class="tablertext">Background</spam>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
     </div>
     <p>
         <a class="hyperline" href="https://cs.rin.ru/">Steam Underground</a> is a russian forum which is embedded inside of the cs.rin.ru site 
@@ -20,7 +40,7 @@
         initially. Usually, if you're unable to find games on other piracy sites you might be lucky to find them here,
         or at least have the tools required to contribute and help preserve games yourself!
     </p>
-    <h2>Background</h2>
+    <h2 id="background">Background</h2>
     <p>
         <img src="images/rin.png"/>
         rin.ru, RIN being an acronym for Russian Information Network is a russian organization which encouraged internet use in russia

@@ -4,5 +4,10 @@
   
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    bro
+    <h1 class="titlefade" style="text-align: center">Welcome to the Hallway</h1>
+    <h2 class="subtitlefade" style="text-align: center; margin-top: -1%">We have</h2>
+    <a href="myrient.aspx"><img src="images/myrient.png" class="image bamient" /></a>
+    <a href="underground.aspx"><img src="images/underground.png" class="image zaminu" /></a>
+    <a href="torrentleech.aspx"><img src="images/tl.png" class="image ramment"></a>
+    
 </asp:Content>
