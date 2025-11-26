@@ -70,6 +70,7 @@
     <Content Include="images\rin.png" />
     <Content Include="images\underground.png" />
     <Content Include="stylishsheet.css" />
+    <Content Include="torrentleech.aspx" />
     <Content Include="Web.config" />
     <Content Include="Home.aspx" />
     <Content Include="myrient.aspx" />
@@ -97,6 +98,13 @@
     </Compile>
     <Compile Include="myrient.aspx.designer.cs">
       <DependentUpon>myrient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="torrentleech.aspx.cs">
+      <DependentUpon>torrentleech.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="torrentleech.aspx.designer.cs">
+      <DependentUpon>torrentleech.aspx</DependentUpon>
     </Compile>
     <Compile Include="underground.aspx.cs">
       <DependentUpon>underground.aspx</DependentUpon>
