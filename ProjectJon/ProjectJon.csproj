@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="images\rin.png" />
     <Content Include="images\underground.png" />
+    <Content Include="Registration.aspx" />
     <Content Include="stylishsheet.css" />
     <Content Include="torrentleech.aspx" />
     <Content Include="Web.config" />
@@ -78,6 +79,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -58,5 +58,4 @@
 . If you just grab a torrent (hit) and then just delete it (run) the system would eventually fall apart." ~Read more over <a class="hyperline" href="https://wiki.torrentleech.org/doku.php/hnr">here</a>
         </p>
     </div>
-</div>
 </asp:Content>

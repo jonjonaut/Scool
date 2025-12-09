@@ -15,6 +15,9 @@
     <form runat="server">
         <div class="panel" style="text-decoration: none">
             <span>
+                <a class="standard" href="Registration.aspx">Register</a>
+            </span>
+            <span>
                 <a class="standard" href="Home.aspx">Home</a>
             </span>
             <span>
