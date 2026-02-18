@@ -44,6 +44,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.OleDb, Version=10.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.OleDb.10.0.2\lib\net462\System.Data.OleDb.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -69,13 +72,12 @@
   <ItemGroup>
     <Content Include="ADMINISTRATOR.aspx" />
     <Content Include="App_Data\sanctumdb.accdb" />
-    <Content Include="images\Administrator.png" />
     <Content Include="images\myrient.png" />
     <Content Include="images\tl.png" />
     <Content Include="Login.aspx" />
     <Content Include="images\rin.png" />
-    <Content Include="underground.png" />
     <Content Include="Registration.aspx" />
+    <Content Include="SpecilUsers.aspx" />
     <Content Include="stylishsheet.css" />
     <Content Include="torrentleech.aspx" />
     <Content Include="User.aspx" />
@@ -129,6 +131,13 @@
     <Compile Include="myrient.aspx.designer.cs">
       <DependentUpon>myrient.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SpecilUsers.aspx.cs">
+      <DependentUpon>SpecilUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SpecilUsers.aspx.designer.cs">
+      <DependentUpon>SpecilUsers.aspx</DependentUpon>
+    </Compile>
     <Compile Include="torrentleech.aspx.cs">
       <DependentUpon>torrentleech.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -152,6 +161,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="libman.json" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
     <None Include="Web.Debug.config">
@@ -165,6 +175,25 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />

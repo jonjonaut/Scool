@@ -2,9 +2,9 @@
 
 :root {
     --len: 148ch;
-    --bgi: linear-gradient(to right,rgba(119, 127, 128, 1) 0%, rgba(43, 43, 54, 1) 29%, rgba(34, 40, 41, 1) 53%, rgba(31, 37, 38, 1) 78%, rgba(58, 58, 66, 1) 100%);
-    --bgim: linear-gradient(to right,rgba(60, 196, 214, 1) 0%, rgba(79, 171, 214, 1) 29%, rgba(16, 167, 227, 1) 53%, rgba(56, 208, 235, 1) 78%, rgba(40, 237, 237, 1) 100%);
-    --bgit: linear-gradient(to right,rgba(25, 88, 15, 1) 0%, rgba(87, 199, 133, 1) 35%, rgba(255, 255, 255, 1) 55%);
+    --bgi: repeating-linear-gradient(to right,rgba(255, 255, 255, 1) 0%, rgba(73, 73, 74, 1) 39%, rgba(54, 60, 61, 1) 53%, rgba(51, 57, 58, 1) 78%, rgba(58, 58, 66, 1) 100%);
+    --bgim: repeating-linear-gradient(to right,rgba(60, 196, 214, 1) 0%, rgba(79, 171, 214, 1) 29%, rgba(16, 167, 227, 1) 53%, rgba(56, 208, 235, 1) 78%, rgba(40, 237, 237, 1) 100%);
+    --bgit: repeating-linear-gradient(to right,rgba(25, 88, 15, 1) 0%, rgba(87, 199, 133, 1) 35%, rgba(255, 255, 255, 1) 55%, rgba(255, 255, 255, 1) 100%);
 }
 
 p {
@@ -18,7 +18,7 @@ h2 {
 .standard {
     text-decoration: none;
     color: #00b6f9;
-}F
+}
 
 .hyperline {
     text-decoration: none
@@ -42,7 +42,7 @@ h2 {
 .funny {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, #ff0000 0%, #ff9a00 10%, #d1de21 20%, #4fdc4a 30%, #3fdad8 40%, #2fc9e2 50%, #1c7fee 60%, #5f15f2 70%, #ba0cf8 80%, #fb07d9 90%, #ff0000 100%);
+    background-image: repeating-linear-gradient(to right, #ff0000 0%, #ff9a00 10%, #d1de21 20%, #4fdc4a 30%, #3fdad8 40%, #2fc9e2 50%, #1c7fee 60%, #5f15f2 70%, #ba0cf8 80%, #fb07d9 90%, #ff0000 100%);
     animation: move 3s linear infinite;
     color: blue;
 }
@@ -175,7 +175,14 @@ body {
     }
 }
 
+.seize {
+    display: flex;
+}
+
 .tabler {
+    align-items: stretch;
+    flex-direction: row;
+    height: min-content;
     float: right;
     display: table;
     padding: 7px;

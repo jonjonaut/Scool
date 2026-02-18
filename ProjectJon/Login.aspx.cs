@@ -10,13 +10,11 @@ namespace ProjectJon.images
     public partial class Login : System.Web.UI.Page
     {
 
-        public string userName;
-
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Request.Form["submit"] == null) return; 
 
-            userName = Request.Form["username"];
+            string userName = Request.Form["username"];
             string userPassword = Request.Form["pass"];
 
             if (userName == "admin" && userPassword == "bruhreal")

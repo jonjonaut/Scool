@@ -4,40 +4,40 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <img style="width: 400px" src="images/tl.png"/>
 
+    <div class="seize">
+        <div class="title">
+            <h1 id="title">
+            <span>TorrentLeech</span>
+            <hr/>
+            <marquee class="construction funny" truespeed="" scrolldelay="40" scrollamount="3" style="position: absolute">Under Construction</marquee>
+            </h1>
+        </div>
     
-    <div class="title">
-        <h1 id="title">
-        <span>TorrentLeech</span>
-        <hr/>
-        <marquee class="construction funny" truespeed="" scrolldelay="40" scrollamount="3" style="position: absolute">Under Construction</marquee>
-        </h1>
-    </div>
-    
-    <div id="tabler" class="tabler" style="margin-top: -10%"><div class="tablertitle"><h2>Contents</h2></div>
-        <ul>
-            <li>
-                <a href="#title">
-                    <span>1</span>  <span class="tablertext">TorrentLeech</span>
+        <div id="tabler" class="tabler" style="margin-top: -10%"><div class="tablertitle"><h2>Contents</h2></div>
+            <ul>
+                <li>
+                    <a href="#title">
+                        <span>1</span>  <span class="tablertext">TorrentLeech</span>
 
-                </a>
-                <ul>
+                    </a>
+                    <ul>
                
-                    <li>
-                        <a href="#registration">
-                            <span>2</span>  <spam class="tablertext">Registration</spam>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#hnr">
-                            <span>2.1</span>  <spam class="tablertext">Hit And Run System</spam>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+                        <li>
+                            <a href="#registration">
+                                <span>2</span>  <spam class="tablertext">Registration</spam>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#hnr">
+                                <span>2.1</span>  <spam class="tablertext">Hit And Run System</spam>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
 
+        </div>
     </div>
-
     <div>
         <p><a class="hyperline" href="https://torrentleech.org">TorrentLeech</a> is a <a class="hyperline" href="https://en.wikipedia.org/wiki/Torrent_file">Torrent</a> hoster site based around their
            <a class="hyperline" href="https://wiki.installgentoo.com/wiki/Private_trackers">Private Tracker</a> for all consumable media. Ranging from mostly movies, games and such. this is personally my goto site for fetching movies 

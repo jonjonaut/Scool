@@ -7,13 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace ProjectJon
 {
-
-    public partial class User : System.Web.UI.Page
+    public partial class SpecilUsers : System.Web.UI.Page
     {
-        public static string user;
         protected void Page_Load(object sender, EventArgs e)
         {
-            user = Session["User"] as string;
+
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Threading;
 using System.Web;
 using System.Web.UI;
@@ -11,6 +12,7 @@ namespace ProjectJon
 
     public partial class ADMINISTRATOR : System.Web.UI.Page
     {
+        public static bool isAdmin;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -18,6 +20,12 @@ namespace ProjectJon
             Response.Clear();
             Response.End();
             */
+
+            if (Session["admin"] == null)
+            {
+                isAdmin = true;
+                Response.Clear();
+            } 
         }
     }
 }

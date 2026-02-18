@@ -14,9 +14,11 @@
 <body>
     <form runat="server">
         <div class="panel" style="text-decoration: none">
-           
+                    <span>
+                      <a class="standard" href="Home.aspx">Home</a>
+                    </span>
                 <% 
-                    if (Session["admin"] != "OK")
+                    if (Session["admin"] != "OK" && Session["User"] == null)
                     {%>
                         <span>
                             <a class="standard" href="Login.aspx">Login</a>
@@ -26,8 +28,19 @@
                              <a class="standard" href="Registration.aspx">Register</a>
                         </span>
                   <%}
+                    else if (Session["User"] != null) {%>
+                          <span>
+                            <a class="standard" href="User.aspx"><%= Session["User"] %></a>
+                          </span>
+                          <span>
+                             <input type="submit" class="logout standard" value="Logout" name="logout"/>
+                          </span>
+                          <span>
+                             <a class="standard" href="SpecilUsers.aspx">Special</a>
+                          </span>
+                  <%}
                     else
-                    {%>
+                      {%>
                         <span>
                             <a class="standard" href="ADMINISTRATOR.aspx">Admin</a>
                         </span>
@@ -36,9 +49,7 @@
                         </span>
                   <%}%>
 
-            <span>
-                <a class="standard" href="Home.aspx">Home</a>
-            </span>
+            
             <span>
                 <a class="link-underground" href="underground.aspx">Steam Underground</a>
             </span>

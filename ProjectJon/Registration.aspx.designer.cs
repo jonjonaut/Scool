@@ -15,48 +15,48 @@ namespace ProjectJon
     {
 
         /// <summary>
-        /// toggler control.
+        /// retro control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox toggler;
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox retro;
 
         /// <summary>
-        /// Checkbox3 control.
+        /// modern control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox Checkbox3;
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox modern;
 
         /// <summary>
-        /// Checkbox4 control.
+        /// general control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox Checkbox4;
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox general;
 
         /// <summary>
-        /// Checkbox1 control.
+        /// movies control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox Checkbox1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox movies;
 
         /// <summary>
-        /// Checkbox2 control.
+        /// otherPurpose control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox Checkbox2;
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox otherPurpose;
     }
 }

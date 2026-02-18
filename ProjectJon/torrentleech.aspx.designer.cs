@@ -13,19 +13,5 @@ namespace ProjectJon
 
     public partial class torrentleech
     {
-
-        /// <summary>
-        /// Master property.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated property.
-        /// </remarks>
-        public new ProjectJon.Site1 Master
-        {
-            get
-            {
-                return ((ProjectJon.Site1)(base.Master));
-            }
-        }
     }
 }

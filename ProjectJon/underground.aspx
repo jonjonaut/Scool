@@ -3,34 +3,35 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <img src="images/underground.png"/>
-
-    <div class="title">
-        <h1 id="title">
-        <span>The Steam Underground</span>
-        <hr/>
-        <marquee class="construction funny" truespeed="" scrolldelay="40" scrollamount="3" style="position: absolute">Under Construction</marquee>
-        </h1>
+    <div class="seize">
+        <div class="title">
+            <h1 id="title">
+            <span>The Steam Underground</span>
+            <hr/>
+            <marquee class="construction funny" truespeed="" scrolldelay="40" scrollamount="3" style="position: absolute">Under Construction</marquee>
+            </h1>
         
-    </div>
+        </div>
 
-    <div id="tabler" class="tabler" style="margin-top: -14.5%"><div class="tablertitle"><h2>Contents</h2></div>
-        <ul>
-            <li>
-                <a href="#title">
-                    <span>1</span>  <span class="tablertext">Steam Underground</span>
+        <div id="tabler" class="tabler" style="margin-top: -14.5%"><div class="tablertitle"><h2>Contents</h2></div>
+            <ul>
+                <li>
+                    <a href="#title">
+                        <span>1</span>  <span class="tablertext">Steam Underground</span>
 
-                </a>
-                <ul>
+                    </a>
+                    <ul>
                    
-                    <li>
-                        <a href="#background">
-                            <span>2</span>  <spam class="tablertext">Background</spam>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+                        <li>
+                            <a href="#background">
+                                <span>2</span>  <spam class="tablertext">Background</spam>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
 
+        </div>
     </div>
     <p>
         <a class="hyperline" href="https://cs.rin.ru/">Steam Underground</a> is a russian forum which is embedded inside of the cs.rin.ru site 
