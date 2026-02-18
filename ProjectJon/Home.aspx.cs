@@ -33,7 +33,7 @@ namespace ProjectJon
             {
                 liners++;
             }
-            Response.Write(string.Concat(Enumerable.Repeat($"<br>", liners)) + response);
+            //Response.Write(string.Concat(Enumerable.Repeat($"<br>", liners)) + response);
 
         }
     }

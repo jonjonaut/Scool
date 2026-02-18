@@ -14,9 +14,28 @@
 <body>
     <form runat="server">
         <div class="panel" style="text-decoration: none">
-            <span>
-                <a class="standard" href="Registration.aspx">Register</a>
-            </span>
+           
+                <% 
+                    if (Session["admin"] != "OK")
+                    {%>
+                        <span>
+                            <a class="standard" href="Login.aspx">Login</a>
+                        </span>
+                        
+                        <span>
+                             <a class="standard" href="Registration.aspx">Register</a>
+                        </span>
+                  <%}
+                    else
+                    {%>
+                        <span>
+                            <a class="standard" href="ADMINISTRATOR.aspx">Admin</a>
+                        </span>
+                        <span>
+                            <input type="submit" class="logout standard" value="Logout" name="logout"/>
+                        </span>
+                  <%}%>
+
             <span>
                 <a class="standard" href="Home.aspx">Home</a>
             </span>
@@ -24,11 +43,12 @@
                 <a class="link-underground" href="underground.aspx">Steam Underground</a>
             </span>
             <span>
-                <a class="standard" href="myrient.aspx">Myrient</a>
+                <a class="link-myrient" href="myrient.aspx">Myrient</a>
             </span>
             <span>
-                <a class="standard" href="torrentleech.aspx">TorrentLeech</a>
+                <a class="link-torrentleech" href="torrentleech.aspx">TorrentLeech</a>
             </span>
+            
         </div>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

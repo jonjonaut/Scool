@@ -7,16 +7,12 @@ using System.Web.UI.WebControls;
 
 namespace ProjectJon
 {
-    public partial class Site1 : System.Web.UI.MasterPage
+    public static Login login;
+    public partial class User : System.Web.UI.Page
     {
+        private static int user = login.userName;
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Request.Form["logout"] != null)
-            {
-                Session.Abandon();
-                Response.Redirect("Login.aspx");
-            }
-
         }
     }
 }

@@ -67,17 +67,39 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ADMINISTRATOR.aspx" />
+    <Content Include="App_Data\sanctumdb.accdb" />
+    <Content Include="images\Administrator.png" />
+    <Content Include="images\myrient.png" />
+    <Content Include="images\tl.png" />
+    <Content Include="Login.aspx" />
     <Content Include="images\rin.png" />
-    <Content Include="images\underground.png" />
+    <Content Include="underground.png" />
     <Content Include="Registration.aspx" />
     <Content Include="stylishsheet.css" />
     <Content Include="torrentleech.aspx" />
+    <Content Include="User.aspx" />
     <Content Include="Web.config" />
     <Content Include="Home.aspx" />
     <Content Include="myrient.aspx" />
     <Content Include="underground.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADMINISTRATOR.aspx.cs">
+      <DependentUpon>ADMINISTRATOR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRATOR.aspx.designer.cs">
+      <DependentUpon>ADMINISTRATOR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\dbHelper.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.aspx.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
@@ -120,6 +142,13 @@
     </Compile>
     <Compile Include="underground.aspx.designer.cs">
       <DependentUpon>underground.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

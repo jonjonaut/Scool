@@ -24,6 +24,24 @@ namespace ProjectJon
         protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox toggler;
 
         /// <summary>
+        /// Checkbox3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox Checkbox3;
+
+        /// <summary>
+        /// Checkbox4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox Checkbox4;
+
+        /// <summary>
         /// Checkbox1 control.
         /// </summary>
         /// <remarks>
@@ -31,5 +49,14 @@ namespace ProjectJon
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox Checkbox1;
+
+        /// <summary>
+        /// Checkbox2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox Checkbox2;
     }
 }
