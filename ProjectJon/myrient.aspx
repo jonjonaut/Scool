@@ -28,4 +28,8 @@ _  /  / / _  /_/ /_  /   _  / /  __/  / / / /_
          </p>
          
      </div>
+
+    <div>
+        <h2 style="color: red">On March 31st 2026 Myrient was shutdown :/ please use <a href="https://minerva-archive.org">Minerva</a> instead</h2>
+    </div>
 </asp:Content>

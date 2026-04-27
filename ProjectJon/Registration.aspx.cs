@@ -20,9 +20,11 @@ namespace ProjectJon
             if (Request.Form["submit"] != null)
             {
                 string username = Request.Form["regiName"]; 
-                string password = Request.Form["regiPassword"];    
-                string favorite = Request.Form["favsite"];
-                
+                string password = Request.Form["regiPassword"];
+
+                if (Request.Form["favsite"] != null) string favorite = Request.Form["favsite"];
+
+
                 string duplicateSql = $"SELECT * FROM SanctumDB WHERE UID='{username}'";
 
                 isDuplicate = dbHelper.IsExist(db, duplicateSql);

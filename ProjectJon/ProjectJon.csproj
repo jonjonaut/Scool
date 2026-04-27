@@ -73,6 +73,7 @@
     <Content Include="ADMINISTRATOR.aspx" />
     <Content Include="App_Data\sanctumdb.accdb" />
     <Content Include="images\myrient.png" />
+    <Content Include="images\rip.png" />
     <Content Include="images\tl.png" />
     <Content Include="Login.aspx" />
     <Content Include="images\rin.png" />

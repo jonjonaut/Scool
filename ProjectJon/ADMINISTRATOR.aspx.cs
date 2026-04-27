@@ -25,7 +25,9 @@ namespace ProjectJon
             {
                 isAdmin = true;
                 Response.Clear();
-            } 
+            }
+
+
         }
     }
 }
