@@ -15,16 +15,22 @@
                     <input type="submit" name="die" value="yes">
 
             </span
+            
+            <div>
+                <h3>Search User:</h3>
+                <input type="text" name="searchuser" />
+                <input type="submit" name="searchsub" value="submit"/>
+
+ 
+            </div>
 
             <div>
                 <table border="<%=Dtable.Columns.Count%>" cellspacing="0" cellpadding="5">
                     <tbody>
                         <tr>
-                         <%= myThingamajig %>
-                        </tr>
-                        <tr>
-                            <%= notherThingamajiga %>
-                        </tr>
+                         <%= thingamabob %>
+                        </tr>    
+                        <%= notherThingamabob %>
                     </tbody>
                 </table>
             </div>
