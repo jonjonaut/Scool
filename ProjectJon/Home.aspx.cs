@@ -17,13 +17,20 @@ namespace ProjectJon
 
         private static string color, bkgc;
 
+        public bool noFade = false;
 
         private static int liners = 0;
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["HomeVisits"] == null) Session["HomeVisits"] = 0;
 
-            i++;
+            Session["HomeVisits"] = (int)Session["HomeVisits"] + 1;
+            if ((int)Session["HomeVisits"] < 2) return;
+            noFade = true;
+
+
+            /*i++;
 
             bool even = i % 2 == 0; bool feven = i % 5 == 0;
             color = even ? "blue" :  "red";
@@ -32,7 +39,7 @@ namespace ProjectJon
             if (i % 10 == 0)
             {
                 liners++;
-            }
+            }*/
             //Response.Write(string.Concat(Enumerable.Repeat($"<br>", liners)) + response);
 
         }
