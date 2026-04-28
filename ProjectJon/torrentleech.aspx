@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <img style="width: 400px" src="images/tl.png"/>
 
-    <div class="seize">
+    <div>
         <div class="title">
             <h1 id="title">
             <span>TorrentLeech</span>
@@ -13,7 +13,7 @@
             </h1>
         </div>
     
-        <div id="tabler" class="tabler" style="margin-top: -10%"><div class="tablertitle"><h2>Contents</h2></div>
+        <div id="tabler" class="tabler" style="margin-top: -11%"><div class="tablertitle"><h2>Contents</h2></div>
             <ul>
                 <li>
                     <a href="#title">
@@ -39,6 +39,11 @@
         </div>
     </div>
     <div>
+        <details>
+            <summary style="margin-bottom: 1vh">Preview</summary>
+            <img src="images/tlmenu.png" style="width: 50%"/>
+        </details>
+
         <p><a class="hyperline" href="https://torrentleech.org">TorrentLeech</a> is a <a class="hyperline" href="https://en.wikipedia.org/wiki/Torrent_file">Torrent</a> hoster site based around their
            <a class="hyperline" href="https://wiki.installgentoo.com/wiki/Private_trackers">Private Tracker</a> for all consumable media. Ranging from mostly movies, games and such. this is personally my goto site for fetching movies 
             for personal use. There are many pros and cons to torrenting, but in my opinion it is more about the pros rather than cons.

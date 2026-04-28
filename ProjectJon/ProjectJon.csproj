@@ -78,6 +78,7 @@
     <Content Include="images\tl.png" />
     <Content Include="images\tlmenu.png" />
     <Content Include="images\underground.png" />
+    <Content Include="images\undergroundmenu.png" />
     <Content Include="Login.aspx" />
     <Content Include="images\rin.png" />
     <Content Include="Registration.aspx" />

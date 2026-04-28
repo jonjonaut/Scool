@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <img src="images/underground.png"/>
-    <div class="seize">
+    <div>
         <div class="title">
             <h1 id="title">
             <span>The Steam Underground</span>
@@ -33,6 +33,13 @@
 
         </div>
     </div>
+    
+    <details>
+        <summary style="margin-bottom: 1vh">Preview</summary>
+        <img src="images/undergroundmenu.png" style="width: 50%"/>
+    </details>
+
+    
     <p>
         <a class="hyperline" href="https://cs.rin.ru/">Steam Underground</a> is a russian forum which is embedded inside of the cs.rin.ru site 
         for sharing piracy tools and games specifically from steam.
