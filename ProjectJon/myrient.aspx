@@ -20,6 +20,9 @@ _  /  / / _  /_/ /_  /   _  / /  __/  / / / /_
      
 
      <div>
+         <img src="images/beautiful.png" style="display: block; margin: auto; margin-top: -5vh; width: 30%" /> 
+
+
          <p>
              <a class="hyperline" href="https://myrient.erista.me">Myrient</a> is undoubtfully the best source of ROMs for everything that does not include this generation of Console Games. Ad-Free 
                  just like the internet archive, and the Direct Download speed, *muah* best in the country. So essentially myrient unlike many other DDL sites which hosts
@@ -30,6 +33,9 @@ _  /  / / _  /_/ /_  /   _  / /  __/  / / / /_
      </div>
 
     <div>
-        <h2 style="color: red">On March 31st 2026 Myrient was shutdown :/ please use <a href="https://minerva-archive.org">Minerva</a> instead</h2>
+        <h2 style="color: red; margin-top: 5vh">On March 31st 2026 Myrient was shutdown :/ please use <a href="https://minerva-archive.org">Minerva</a> instead</h2>
+    
+        <img src="images/rip.png" style="display: block; margin: auto; width: 40%" /> 
+
     </div>
 </asp:Content>

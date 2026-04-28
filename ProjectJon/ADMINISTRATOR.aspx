@@ -14,7 +14,21 @@
             <span>
                     <input type="submit" name="die" value="yes">
 
-            </span>
+            </span
+
+            <div>
+                <table border="<%=Dtable.Columns.Count%>" cellspacing="0" cellpadding="5">
+                    <tbody>
+                        <tr>
+                         <%= myThingamajig %>
+                        </tr>
+                        <tr>
+                            <%= notherThingamajiga %>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
         <%}
           else
           {%>

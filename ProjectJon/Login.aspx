@@ -9,7 +9,7 @@
             <pre>
                 <input type="text" name="username" id="username" value="" /> <span style="font-size: 16px">Enter your Username</span>
 
-                <input type="text" name="pass" id="pass" value="" /> <span style="font-size: 16px">Enter your Password</span>
+                <input type="password" name="pass" id="pass" value="" /> <span style="font-size: 16px">Enter your Password</span>
 
                 <input type="submit" name="submit" value="submit">
 

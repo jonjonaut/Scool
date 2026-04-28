@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading;
@@ -14,6 +15,8 @@ namespace ProjectJon
     {
         public static bool isAdmin;
 
+        public DataTable Dtable;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             /*if (Request.Form["die"] == null) return;
@@ -25,7 +28,14 @@ namespace ProjectJon
             {
                 isAdmin = true;
                 Response.Clear();
+                return;
             }
+
+            string fileName = "sanctumdb.accdb";
+            string SQL = "SELECT * FROM SanctumDB";
+            DataTable Dtable = dbHelper.ExecuteDataTable(fileName, SQL);
+
+
 
 
         }

@@ -72,9 +72,12 @@
   <ItemGroup>
     <Content Include="ADMINISTRATOR.aspx" />
     <Content Include="App_Data\sanctumdb.accdb" />
+    <Content Include="images\beautiful.png" />
     <Content Include="images\myrient.png" />
     <Content Include="images\rip.png" />
     <Content Include="images\tl.png" />
+    <Content Include="images\tlmenu.png" />
+    <Content Include="images\underground.png" />
     <Content Include="Login.aspx" />
     <Content Include="images\rin.png" />
     <Content Include="Registration.aspx" />
