@@ -3,11 +3,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div style="color:white">
-        <h1>Welcome to the special users page!</h1>
+        <h1>Welcome  <%= Session["User"] %>!</h1>
         
         This is your profile.
 
-        <%= Session["User"] %>
         <span style="margin-bottom: 5vh">
                 <h3>Reset values by:</h3><select name="reset">
                 
@@ -27,7 +26,7 @@
             <input type="submit" name="changesub" value="submit"/>
         </span>
         <span style="margin-bottom: 5vh">
-            <input type="submit" name="verbose" value=<%= willVerbose ? "Hide" : "Show" %> /> <%= willVerbose %>
+            <input type="submit" name="verbose" value=<%= willVerbose ? "Hide" : "Show" %> />
         </span>
 
         <%if (Dtable.Rows.Count > 0) {%>

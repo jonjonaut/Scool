@@ -32,11 +32,11 @@
                           <span>
                             <a class="standard" href="SpecilUsers.aspx">Profile</a>
                           </span>
+                          <!-- <span>
+                            <a class="standard" href="User.aspx"><%--= Session["User"] --%></a>
+                          </span> -->
                           <span>
-                            <a class="standard" href="User.aspx"><%= Session["User"] %></a>
-                          </span>
-                          <span>
-                             <input type="submit" class="logout standard" value="Logout" name="logout"/>
+                             <input type="submit" class="denial standard" value="Logout" name="logout"/>
                           </span>
                           
                   <%}

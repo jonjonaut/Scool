@@ -39,6 +39,13 @@ namespace ProjectJon
 
             string SQL;
             string fileName = "sanctumdb.accdb";
+            string obliterate = Request.Form["killzis"];
+            if (obliterate != null)
+            {
+                SQL = $"DELETE FROM SanctumDB WHERE UID='{obliterate}'";
+                dbHelper.DoQuery(fileName, SQL);
+
+            }
             if (Request.Form["searchsub"] == null || Request.Form["searchuser"] == "") SQL = "SELECT * FROM SanctumDB";
             else SQL = $"SELECT * FROM SanctumDB WHERE {Request.Form["elementation"]}='{Request.Form["searchuser"]}'";
             Dtable = dbHelper.ExecuteDataTable(fileName, SQL);
@@ -67,12 +74,13 @@ namespace ProjectJon
                 for (int j = 0; j < Dtable.Columns.Count; j++)
                 {
                     columnName = Dtable.Columns[j].ColumnName;
-                    if (j == 0) notherThingamabob += $"<th > <input type=\"submit\" class=\"denial standard\" name=\"killzis\" value={Dtable.Rows[i][columnName]} /> </th >";
+                    if (j == 0) notherThingamabob += $"<th > <input type=\"submit\" class=\"fieldnomore denial standard\" name=\"killzis\" value={Dtable.Rows[i][columnName]} /> </th >";
                     else notherThingamabob += $"<td> {Dtable.Rows[i][columnName]} </td>";
                 }
                 notherThingamabob += $"</tr>"; 
             }
 
+            
       
         }
     }

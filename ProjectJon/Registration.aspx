@@ -5,7 +5,7 @@
     <h1 class="titleboxing">Register</h1>
     <% if (isLogin)
     {%>
-        <span>User <%=Request.Form["username"]%> registered successfully! <%=Request.Form["favsite"] %></span>
+        <span>User <%=Request.Form["username"]%> registered successfully!</span>
 
   <%}%>
     <% if (isDuplicate)
@@ -40,7 +40,7 @@
 
             My favorite site here:
 
-            <span><input type="radio" name="favoritethatworks" value="Myrient"  /> Myrient </span>
+            <span><input type="radio" name="favoritethatworks" value="Myrient" selected/> Myrient </span>
             <span><input type="radio" name="favoritethatworks" value="TorrentLeech" /> TorrentLeech </span>
             <span><input type="radio" name="favoritethatworks" value="Underground" /> Steam Underground </span>
 

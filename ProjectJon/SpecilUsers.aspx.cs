@@ -40,11 +40,9 @@ namespace ProjectJon
                 }
             }
 
-            if (Request.Form["verbose"] != null)
-            {
-                if (!willVerbose) willVerbose = true;
-                else willVerbose = false;
-            }
+            if (Request.Form["verbose"] == "Show") willVerbose = true;
+            else if (Request.Form["verbose"] == "Hide") willVerbose = false;
+            
 
             string sql = $"SELECT * FROM SanctumDB WHERE UID='{Session["User"]}' AND UPass='{Session["Password"]}'";
 

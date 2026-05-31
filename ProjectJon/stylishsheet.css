@@ -76,6 +76,9 @@ body {
     display: flex;
     transform: translateY(20%) translateX(-5%);
 }
+.fieldnomore:hover {
+    color: #CC0000
+}
 .titleboxing {
     display: inline-block;
     padding: 8px 7px;
@@ -164,6 +167,10 @@ body {
     margin: auto;
 }
 
+.test {
+    display: inline-block;
+    border: 5px red solid;
+}
 .bamient {
     animation: fadeIn 1s linear forwards;
     animation-delay: 5s;
@@ -176,6 +183,33 @@ body {
     animation: fadeIn 1s linear forwards;
     animation-delay: 7s;
 }
+.causewhynot {
+    animation-name: horizontal-bounce, vertical-bounce;
+    animation-duration: 3.141s, 1.414s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear
+}
+
+@keyframes horizontal-bounce {
+    from {
+        margin-left: 0%;
+    }
+    to {
+        margin-left: 100%;
+    }
+}
+
+@keyframes vertical-bounce {
+    from {
+        margin-top: 0%;
+    }
+    to {
+        margin-top: 100%;
+    }
+}
+
+
 
 @keyframes fadeIn {
     from {

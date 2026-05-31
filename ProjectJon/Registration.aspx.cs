@@ -10,6 +10,8 @@ namespace ProjectJon
 {
     public partial class Registration : System.Web.UI.Page
     {
+        protected global::System.Web.UI.HtmlControls.HtmlInputRadioButton favoritethatworks; // the framework fails to implement global radio object
+
         public static bool isLogin = false;
         public static bool isDuplicate = false;
         public static bool isEmpty = false;

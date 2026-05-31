@@ -28,20 +28,6 @@ namespace ProjectJon
             Session["HomeVisits"] = (int)Session["HomeVisits"] + 1;
             if ((int)Session["HomeVisits"] < 2) return;
             noFade = true;
-
-
-            /*i++;
-
-            bool even = i % 2 == 0; bool feven = i % 5 == 0;
-            color = even ? "blue" :  "red";
-            bkgc = feven ? "aquamarine" : "transparent";
-            response = $"<p style=\"color:{color}; background-color: {bkgc} \">{i}</p>";
-            if (i % 10 == 0)
-            {
-                liners++;
-            }*/
-            //Response.Write(string.Concat(Enumerable.Repeat($"<br>", liners)) + response);
-
         }
     }
 }

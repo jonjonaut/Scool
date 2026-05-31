@@ -6,15 +6,7 @@
     <form method="post">
         <%if (Session["admin"] != null)
             {%>
-            <pre style="font-family: Impact">Would you like to kill the server</pre>
-            <span>
-                    <input type="submit" name="die" value="yes">
-
-            </span>
-            <span>
-                    <input type="submit" name="die" value="yes">
-
-            </span
+            <pre style="font-size: 38px; font-family: Impact">This is the admin page, please proceed with caution.</pre>
             
             <div>
                 <span>
