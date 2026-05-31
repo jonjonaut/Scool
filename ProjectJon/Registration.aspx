@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>Register</h1>
+    <h1 class="titleboxing">Register</h1>
     <% if (isLogin)
     {%>
         User <%=Request.Form["username"]%> registered successfully! <%=Request.Form["favsite"] %>
@@ -33,13 +33,12 @@
 
             </label>
 
-            <label>
             My favorite site here:
 
-            <input type="radio" name="favsite" value="Myrient" runat="server"> Myrient
-            <input type="radio" name="favsite" value="TorrentLeech" runat="server"> TorrentLeech
-            <input type="radio" name="favsite" value="Underground" runat="server"> Steam Underground
-            </label>
+            <span><input type="radio" name="favsite" value="Myrient" runat="server" checked /> Myrient </span>
+            <span><input type="radio" name="favsite" value="TorrentLeech" runat="server" /> TorrentLeech </span>
+            <span><input type="radio" name="favsite" value="Underground" runat="server" /> Steam Underground </span>
+
             <input type = "submit" name = "submit" value = "submit">
 
             </pre>

@@ -35,7 +35,7 @@
     </div>
     
     <details>
-        <summary style="margin-bottom: 1vh">Preview</summary>
+        <summary style="margin-bottom: 1vh" class="titleboxing">Preview</summary>
         <img src="images/undergroundmenu.png" style="width: 50%"/>
     </details>
 
@@ -48,7 +48,7 @@
         initially. Usually, if you're unable to find games on other piracy sites you might be lucky to find them here,
         or at least have the tools required to contribute and help preserve games yourself!
     </p>
-    <h2 id="background">Background</h2>
+    <h2 id="background titleboxing">Background</h2>
     <p>
         <img src="images/rin.png"/>
         rin.ru, RIN being an acronym for Russian Information Network is a russian organization which encouraged internet use in russia

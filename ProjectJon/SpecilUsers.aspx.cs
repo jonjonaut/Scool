@@ -15,12 +15,36 @@ namespace ProjectJon
         public string tabler;
         public DataTable Dtable;
 
+        public bool willVerbose = false;
+
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["user"] == null) Response.Redirect("Login.aspx");
 
             string fileName = "sanctumdb.accdb";
+            
+            if (Request.Form["changesub"] != null)
+            {
+                string changed = Request.Form["change"];
+                string updateSQL = $"UPDATE SanctumDB SET {Request.Form["reset"]}='{changed}' WHERE UID='{Session["User"]}'";
+                dbHelper.DoQuery(fileName, updateSQL);
+
+                if (Request.Form["reset"] == "UPass")
+                {
+                    Session["Password"] = changed;
+                }
+                if (Request.Form["reset"] == "UID")
+                {
+                    Session["User"] = changed;
+                }
+            }
+
+            if (Request.Form["verbose"] != null)
+            {
+                if (!willVerbose) willVerbose = true;
+                else willVerbose = false;
+            }
 
             string sql = $"SELECT * FROM SanctumDB WHERE UID='{Session["User"]}' AND UPass='{Session["Password"]}'";
 
@@ -34,7 +58,7 @@ namespace ProjectJon
                 string dtableStr = Convert.ToString(Dtable.Rows[0][columnName]);
 
 
-                if (dtableStr != "False")
+                if (dtableStr != "False" || willVerbose)
                 {
                     myThingamajig += $"<th > {columnName} </th >";
                     notherThingamajiga += $"<td > {Dtable.Rows[0][columnName]} </td >";

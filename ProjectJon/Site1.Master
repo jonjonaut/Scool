@@ -30,14 +30,15 @@
                   <%}
                     else if (Session["User"] != null) {%>
                           <span>
+                            <a class="standard" href="SpecilUsers.aspx">Profile</a>
+                          </span>
+                          <span>
                             <a class="standard" href="User.aspx"><%= Session["User"] %></a>
                           </span>
                           <span>
                              <input type="submit" class="logout standard" value="Logout" name="logout"/>
                           </span>
-                          <span>
-                             <a class="standard" href="SpecilUsers.aspx">Special</a>
-                          </span>
+                          
                   <%}
                     else
                       {%>
@@ -45,7 +46,7 @@
                             <a class="standard" href="ADMINISTRATOR.aspx">Admin</a>
                         </span>
                         <span>
-                            <input type="submit" class="logout standard" value="Logout" name="logout"/>
+                            <input type="submit" class="logout standard" value="Logout" name="logout" />
                         </span>
                   <%}%>
 

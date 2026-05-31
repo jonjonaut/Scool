@@ -17,14 +17,27 @@
             </span
             
             <div>
-                <h3>Search User:</h3>
-                <input type="text" name="searchuser" />
-                <input type="submit" name="searchsub" value="submit"/>
+                <span>
+                    <h3>Search:</h3>
+                    <input type="text" name="searchuser" />
+                    <input type="submit" name="searchsub" value="submit"/>
 
+                    <h4>By:</h4>
+                    <select name="elementation">
+                        <option value="UID">Username</option>
+                        <option value="UPass">Password</option>
+                        <option value="Retro">Retro</option>
+                        <option value="Modern">Modern</option>
+                        <option value="General">General</option>
+                        <option value="Movies">Movies</option>
+                        <option value="Other">Other</option>
+                        <option value="Favorite">Favorite</option>
+                    </select>
+                </span>
  
             </div>
 
-            <div>
+            <div style="display: flex; align-items: left">
                 <table border="<%=Dtable.Columns.Count%>" cellspacing="0" cellpadding="5">
                     <tbody>
                         <tr>
@@ -34,6 +47,7 @@
                     </tbody>
                 </table>
             </div>
+            <%= killamabob %>
             
         <%}
           else

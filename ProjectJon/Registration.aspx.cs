@@ -12,7 +12,6 @@ namespace ProjectJon
     {
         public static bool isLogin = false;
         public static bool isDuplicate = false;
-        private string favorite;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -23,7 +22,7 @@ namespace ProjectJon
                 string username = Request.Form["regiName"]; 
                 string password = Request.Form["regiPassword"];
 
-                if (Request.Form["favsite"] != null) favorite = Request.Form["favsite"];
+                string favorite = Request.Form["favsite"];
 
 
                 string duplicateSql = $"SELECT * FROM SanctumDB WHERE UID='{username}'";

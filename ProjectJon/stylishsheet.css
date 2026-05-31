@@ -2,6 +2,8 @@
 
 :root {
     --len: 148ch;
+    --ansi-blue-foreground: #55f;
+    --ansi-blue-background: #000080;
     --bgi: repeating-linear-gradient(to right,rgba(255, 255, 255, 1) 0%, rgba(73, 73, 74, 1) 39%, rgba(54, 60, 61, 1) 53%, rgba(51, 57, 58, 1) 78%, rgba(58, 58, 66, 1) 100%);
     --bgim: repeating-linear-gradient(to right,rgba(60, 196, 214, 1) 0%, rgba(79, 171, 214, 1) 29%, rgba(16, 167, 227, 1) 53%, rgba(56, 208, 235, 1) 78%, rgba(40, 237, 237, 1) 100%);
     --bgit: repeating-linear-gradient(to right,rgba(25, 88, 15, 1) 0%, rgba(87, 199, 133, 1) 35%, rgba(255, 255, 255, 1) 55%, rgba(255, 255, 255, 1) 100%);
@@ -56,15 +58,30 @@ h2 {
 }
 
 body {
-    background-color: #232323;
+    //background-color: #232323;
+    background-color: #17181c;
+    //background-image: linear-gradient(to top, #282828 50%, #272727 60%, #262626 70%, #252525 100%);
     font-family: monospace;
-    font-size: 25px
+    font-size: 25px;
+    color: #ff7edb;
 }
 .panel {
     padding-bottom: 20px;
 }
 .underground {
     font-family: "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+}
+.login {
+    color: white;
+    display: flex;
+    transform: translateY(20%) translateX(-5%);
+}
+.titleboxing {
+    display: inline-block;
+    padding: 8px 7px;
+    background: var(--ansi-blue-background);
+    box-sizing: border-box;
+    box-shadow: 8px 8px 0 1px var(--ansi-blue-foreground);
 }
 .logout {
     background: none;

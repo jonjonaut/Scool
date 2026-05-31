@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.EnterpriseServices.CompensatingResourceManager;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml.Linq;
 
 namespace ProjectJon
 {
@@ -19,6 +21,8 @@ namespace ProjectJon
 
         public string thingamabob = "";
         public string notherThingamabob = "";
+        public string killamabob = "";
+
         protected void Page_Load(object sender, EventArgs e)
         {
             /*if (Request.Form["die"] == null) return;
@@ -35,8 +39,8 @@ namespace ProjectJon
 
             string SQL;
             string fileName = "sanctumdb.accdb";
-            if (Request.Form["searchsub"] == null) SQL = "SELECT * FROM SanctumDB";
-            else SQL = $"SELECT * FROM SanctumDB WHERE UID='{Request.Form["searchuser"]}'";
+            if (Request.Form["searchsub"] == null || Request.Form["searchuser"] == "") SQL = "SELECT * FROM SanctumDB";
+            else SQL = $"SELECT * FROM SanctumDB WHERE {Request.Form["elementation"]}='{Request.Form["searchuser"]}'";
             Dtable = dbHelper.ExecuteDataTable(fileName, SQL);
 
             if (Dtable.Rows.Count < 1)
@@ -63,10 +67,15 @@ namespace ProjectJon
                 for (int j = 0; j < Dtable.Columns.Count; j++)
                 {
                     columnName = Dtable.Columns[j].ColumnName;
-                    notherThingamabob += $"<td > {Dtable.Rows[i][columnName]} </td >";
+                    notherThingamabob += $"<td> {Dtable.Rows[i][columnName]} </td>";
                 }
-                notherThingamabob += "</tr>";
-            }    
+                notherThingamabob += $"</tr>"; 
+            }
+
+            for (int i = 0; i < Dtable.Rows.Count; i++)
+            {
+                killamabob += $"<span><button style=\"color: red\" type=\"submit\" name=\"removeField\" value=\"Dtable.Rows[0][Dtable.Columns[i].ColumnName]\">X</button></span>";
+            }
         }
     }
 }

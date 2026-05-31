@@ -7,7 +7,7 @@
     <div>
         <div class="title">
             <h1 id="title">
-            <span>TorrentLeech</span>
+            <span class="titleboxing">TorrentLeech</span>
             <hr/>
             <marquee class="construction funny" truespeed="" scrolldelay="40" scrollamount="3" style="position: absolute">Under Construction</marquee>
             </h1>
@@ -40,7 +40,7 @@
     </div>
     <div>
         <details>
-            <summary style="margin-bottom: 1vh">Preview</summary>
+            <summary style="margin-bottom: 1vh" class="titleboxing">Preview</summary>
             <img src="images/tlmenu.png" style="width: 50%"/>
         </details>
 
