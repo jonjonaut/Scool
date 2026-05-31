@@ -12,6 +12,8 @@ namespace ProjectJon
     {
         public static bool isLogin = false;
         public static bool isDuplicate = false;
+        public static bool isEmpty = false;
+
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -22,13 +24,15 @@ namespace ProjectJon
                 string username = Request.Form["regiName"]; 
                 string password = Request.Form["regiPassword"];
 
-                string favorite = Request.Form["favsite"];
+                string favorite = Request.Form["favoritethatworks"];
 
 
                 string duplicateSql = $"SELECT * FROM SanctumDB WHERE UID='{username}'";
 
                 isDuplicate = dbHelper.IsExist(db, duplicateSql);
-                if (isDuplicate) return; 
+                isEmpty = username == "" || password == "";
+
+                if (isDuplicate || isEmpty) return; 
                 string sql = $"INSERT INTO SanctumDB ([UID], [UPass], [Retro], [Modern], [General], [Movies], [Other], [Favorite]) VALUES ('{username}','{password}','{(retro.Checked ? "True" : "False")}','{(modern.Checked ? "True" : "False")}','{(general.Checked ? "True" : "False")}','{(movies.Checked ? "True" : "False")}','{(otherPurpose.Checked ? "True" : "False")}','{favorite}')";
 
                 dbHelper.DoQuery("sanctumdb.accdb", sql);

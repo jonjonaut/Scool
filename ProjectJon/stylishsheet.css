@@ -79,11 +79,11 @@ body {
 .titleboxing {
     display: inline-block;
     padding: 8px 7px;
-    background: var(--ansi-blue-background);
+    background-color: var(--ansi-blue-background);
     box-sizing: border-box;
     box-shadow: 8px 8px 0 1px var(--ansi-blue-foreground);
 }
-.logout {
+.denial {
     background: none;
     border: none;
     display: inline;

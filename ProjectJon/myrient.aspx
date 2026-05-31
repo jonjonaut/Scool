@@ -21,7 +21,7 @@ _  /  / / _  /_/ /_  /   _  / /  __/  / / / /_
 
      <div>
          <details>
-            <summary class="funny titleboxing" style="margin-top: -5vh; margin-bottom: 1vh">Preview</summary>
+            <summary class="titleboxing funny" style="margin-top: -5vh; margin-bottom: 1vh">Preview</summary>
             <img src="images/beautiful.png" style="width: 30%" /> 
          </details>
 

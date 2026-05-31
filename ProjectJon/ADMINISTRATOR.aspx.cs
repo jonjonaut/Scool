@@ -67,15 +67,13 @@ namespace ProjectJon
                 for (int j = 0; j < Dtable.Columns.Count; j++)
                 {
                     columnName = Dtable.Columns[j].ColumnName;
-                    notherThingamabob += $"<td> {Dtable.Rows[i][columnName]} </td>";
+                    if (j == 0) notherThingamabob += $"<th > <input type=\"submit\" class=\"denial standard\" name=\"killzis\" value={Dtable.Rows[i][columnName]} /> </th >";
+                    else notherThingamabob += $"<td> {Dtable.Rows[i][columnName]} </td>";
                 }
                 notherThingamabob += $"</tr>"; 
             }
 
-            for (int i = 0; i < Dtable.Rows.Count; i++)
-            {
-                killamabob += $"<span><button style=\"color: red\" type=\"submit\" name=\"removeField\" value=\"Dtable.Rows[0][Dtable.Columns[i].ColumnName]\">X</button></span>";
-            }
+      
         }
     }
 }

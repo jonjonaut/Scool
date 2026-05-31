@@ -46,7 +46,7 @@
                             <a class="standard" href="ADMINISTRATOR.aspx">Admin</a>
                         </span>
                         <span>
-                            <input type="submit" class="logout standard" value="Logout" name="logout" />
+                            <input type="submit" class="denial standard" value="Logout" name="logout" />
                         </span>
                   <%}%>
 

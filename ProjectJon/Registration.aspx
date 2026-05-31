@@ -5,15 +5,20 @@
     <h1 class="titleboxing">Register</h1>
     <% if (isLogin)
     {%>
-        User <%=Request.Form["username"]%> registered successfully! <%=Request.Form["favsite"] %>
+        <span>User <%=Request.Form["username"]%> registered successfully! <%=Request.Form["favsite"] %></span>
 
   <%}%>
     <% if (isDuplicate)
       {%>
-        Username already taken! Please try a different username.
+        <span>Username already taken! Please try a different username.</span>
 
     <%}%>
-    <form>
+    <% if (isEmpty)
+      {%>
+        <span>Either Username or Password are empty! Please try again.</span>
+
+    <%}%>
+    <form method="post" action="Registration.aspx">
         <div style="color: white">
             <h3>Enter thy details.</h3>
             <hr />
@@ -35,11 +40,11 @@
 
             My favorite site here:
 
-            <span><input type="radio" name="favsite" value="Myrient" runat="server" checked /> Myrient </span>
-            <span><input type="radio" name="favsite" value="TorrentLeech" runat="server" /> TorrentLeech </span>
-            <span><input type="radio" name="favsite" value="Underground" runat="server" /> Steam Underground </span>
+            <span><input type="radio" name="favoritethatworks" value="Myrient"  /> Myrient </span>
+            <span><input type="radio" name="favoritethatworks" value="TorrentLeech" /> TorrentLeech </span>
+            <span><input type="radio" name="favoritethatworks" value="Underground" /> Steam Underground </span>
 
-            <input type = "submit" name = "submit" value = "submit">
+            <input type="submit" name="submit" value="Register" style="padding: 10px 20px">
 
             </pre>
         </div>
