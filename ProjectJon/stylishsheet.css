@@ -23,6 +23,7 @@ h2 {
 }
 
 .hyperline {
+    color: #ff5;
     text-decoration: none
 }
 .hyperline:hover {
@@ -101,11 +102,12 @@ body {
 .link-underground:hover {
     width: var(--len);
     margin: 0 auto;
-    background-image: var(--bgi); 
+    background-image: var(--bgi);
     background-position: 0 0, 0 0;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: move 12s linear infinite;
+    animation-play-state: running
 }
 .link-underground {
     text-decoration: none;
@@ -113,6 +115,8 @@ body {
     background-position: 0 0, 0 0;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: move 12s linear infinite;
+    animation-play-state: paused
 }
 .link-myrient:hover {
     width: var(--len);
@@ -122,6 +126,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: move 12s linear infinite;
+    animation-play-state: running
 }
 
 .link-myrient {
@@ -130,6 +135,8 @@ body {
     background-position: 0 0, 0 0;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: move 12s linear infinite;
+    animation-play-state: paused
 }
 
 .link-torrentleech:hover {
@@ -140,6 +147,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: move 12s linear infinite;
+    animation-play-state: running
 }
 .link-torrentleech {
     text-decoration: none;
@@ -147,6 +155,8 @@ body {
     background-position: 0 0, 0 0;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: move 12s linear infinite;
+    animation-play-state: paused
 }
 .titlefade {
     opacity: 0;
@@ -167,10 +177,6 @@ body {
     margin: auto;
 }
 
-.test {
-    display: inline-block;
-    border: 5px red solid;
-}
 .bamient {
     animation: fadeIn 1s linear forwards;
     animation-delay: 5s;
@@ -184,28 +190,27 @@ body {
     animation-delay: 7s;
 }
 .causewhynot {
-    animation-name: horizontal-bounce, vertical-bounce;
-    animation-duration: 3.141s, 1.414s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear
+    animation: 
+        move 3s linear infinite,
+        horizontal-bounce 3.141s infinite alternate linear,
+        vertical-bounce 1.414s infinite alternate linear;
 }
 
 @keyframes horizontal-bounce {
     from {
-        margin-left: 0%;
+        margin-left: 0vw;
     }
     to {
-        margin-left: 100%;
+        margin-left: 85.6vw;
     }
 }
 
 @keyframes vertical-bounce {
     from {
-        margin-top: 0%;
+        margin-top: 0vh;
     }
     to {
-        margin-top: 100%;
+        margin-top: 80.5vh;
     }
 }
 

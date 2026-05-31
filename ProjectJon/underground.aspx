@@ -41,7 +41,7 @@
 
     
     <p>
-        <a class="hyperline" href="https://cs.rin.ru/">Steam Underground</a> is a russian forum which is embedded inside of the cs.rin.ru site 
+        <a class="hyperline" style="color: #00b6f9" href="https://cs.rin.ru/">Steam Underground</a> is a russian forum which is embedded inside of the cs.rin.ru site 
         for sharing piracy tools and games specifically from steam.
         And is basically where most game crackers like to send their
         <a class="hyperline" href="https://en.wikipedia.org/wiki/Software_cracking">cracked</a> games

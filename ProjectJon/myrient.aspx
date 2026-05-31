@@ -21,12 +21,12 @@ _  /  / / _  /_/ /_  /   _  / /  __/  / / / /_
 
      <div>
          <details>
-            <summary class="titleboxing funny" style="margin-top: -5vh; margin-bottom: 1vh">Preview</summary>
+            <summary class="titleboxing" style="margin-top: -5vh; margin-bottom: 1vh">Preview</summary>
             <img src="images/beautiful.png" style="width: 30%" /> 
          </details>
 
          <p>
-             <a class="hyperline" href="https://myrient.erista.me">Myrient</a> is undoubtfully the best source of ROMs for everything that does not include this generation of Console Games. Ad-Free 
+             <a class="link-myrient" style="text-decoration: none" href="https://myrient.erista.me">Myrient</a> is undoubtfully the best source of ROMs for everything that does not include this generation of Console Games. Ad-Free 
                  just like the internet archive, and the Direct Download speed, *muah* best in the country. So essentially myrient unlike many other DDL sites which hosts
                  ROMs are mostly if not all of them, are filled with garbage ads and things you would likely not wanna see without an adblocker and they mostly suck due to their lacking
                  download speeds and download limits. Consider <a class="hyperline" href="https://myrient.erista.me/donate">donating</a> if you appreciate their amazing service.

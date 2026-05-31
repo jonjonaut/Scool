@@ -7,7 +7,7 @@
     <div>
         <div class="title">
             <h1 id="title">
-            <span class="titleboxing">TorrentLeech</span>
+            <span>TorrentLeech</span>
             <hr/>
             <marquee class="construction funny" truespeed="" scrolldelay="40" scrollamount="3" style="position: absolute">Under Construction</marquee>
             </h1>
@@ -44,18 +44,18 @@
             <img src="images/tlmenu.png" style="width: 50%"/>
         </details>
 
-        <p><a class="hyperline" href="https://torrentleech.org">TorrentLeech</a> is a <a class="hyperline" href="https://en.wikipedia.org/wiki/Torrent_file">Torrent</a> hoster site based around their
+        <p><a class="hyperline" style="color: #00b6f9" href="https://torrentleech.org">TorrentLeech</a> is a <a class="hyperline" href="https://en.wikipedia.org/wiki/Torrent_file">Torrent</a> hoster site based around their
            <a class="hyperline" href="https://wiki.installgentoo.com/wiki/Private_trackers">Private Tracker</a> for all consumable media. Ranging from mostly movies, games and such. this is personally my goto site for fetching movies 
             for personal use. There are many pros and cons to torrenting, but in my opinion it is more about the pros rather than cons.
-            Unlike Myrient for instance and many DDL(Direct Download Link) sites, TorrentLeech it self doesn't need to invest bandwidth so it could provide you with the content shared.
+            Unlike Myrient for instance and many DDL(Direct Download Link) sites, TorrentLeech itself doesn't need to invest bandwidth so it could provide you with the content shared.
            
         </p>
-        <h2 id="registration">Registration</h2>
+        <h2 class="titleboxing" id="registration">Registration</h2>
         <p>
             Unlike basically every site that has registration and maybe even some private trackers even, TorrentLeech doesn't outright provide access for whoever
-            wants to use the site for obvious reasons such as mentioned in <a href="#hnr">Hit And Run</a>. TorrentLeech requires <a class="hyperline" href="https://wiki.torrentleech.org/doku.php/everything_about_invites">invitations</a>to make registration possible.  
+            wants to use the site for obvious reasons such as mentioned in <a class="hyperline standard" href="#hnr">Hit And Run</a>. TorrentLeech requires <a class="hyperline" href="https://wiki.torrentleech.org/doku.php/everything_about_invites">invitations</a> to make registration possible.  
         </p>
-        <h2 id="hnr">Hit And Run System</h2>
+        <h2 class="titleboxing" id="hnr">Hit And Run System</h2>
         <p>
             One of the most integral aspects of Private Trackers is that they give the torrents you would upload there and host much more value and less likelyhood to just get lost to time. To make that possible they and many others
             implement Hit and Run systems, they have probably the most advanced HnR(Hit and Run) system ever made. The HnR system is built behind 

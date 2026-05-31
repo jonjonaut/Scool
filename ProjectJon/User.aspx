@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <% if (Session["User"] != null && !visited)
         {%>
-        <div class="test"><h1 class="causewhynot funny">Welcome <%= user %></h1></div>
+        <h1 style="font-size: 70px" class="causewhynot funny">Welcome <%= user %></h1>
       <%}
         else
       {%>

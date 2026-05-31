@@ -28,7 +28,6 @@ namespace ProjectJon
 
                 string favorite = Request.Form["favoritethatworks"];
 
-
                 string duplicateSql = $"SELECT * FROM SanctumDB WHERE UID='{username}'";
 
                 isDuplicate = dbHelper.IsExist(db, duplicateSql);
