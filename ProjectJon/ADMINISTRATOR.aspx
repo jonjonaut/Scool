@@ -20,7 +20,7 @@
                         <option value="UPass">Password</option>
                         <option value="Retro">Retro</option>
                         <option value="Modern">Modern</option>
-                        <option value="General">General</option>
+                        <option value="GenRom">GenRom</option>
                         <option value="Movies">Movies</option>
                         <option value="Other">Other</option>
                         <option value="Favorite">Favorite</option>

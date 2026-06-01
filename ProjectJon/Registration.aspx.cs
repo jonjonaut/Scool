@@ -34,7 +34,7 @@ namespace ProjectJon
                 isEmpty = username == "" || password == "";
 
                 if (isDuplicate || isEmpty) return; 
-                string sql = $"INSERT INTO SanctumDB ([UID], [UPass], [Retro], [Modern], [General], [Movies], [Other], [Favorite]) VALUES ('{username}','{password}','{(retro.Checked ? "True" : "False")}','{(modern.Checked ? "True" : "False")}','{(general.Checked ? "True" : "False")}','{(movies.Checked ? "True" : "False")}','{(otherPurpose.Checked ? "True" : "False")}','{favorite}')";
+                string sql = $"INSERT INTO SanctumDB ([UID], [UPass], [Retro], [Modern], [GenRom], [Movies], [Other], [Favorite]) VALUES ('{username}','{password}','{(retro.Checked ? "True" : "False")}','{(modern.Checked ? "True" : "False")}','{(general.Checked ? "True" : "False")}','{(movies.Checked ? "True" : "False")}','{(otherPurpose.Checked ? "True" : "False")}','{favorite}')";
 
                 dbHelper.DoQuery("sanctumdb.accdb", sql);
 
