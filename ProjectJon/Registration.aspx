@@ -5,17 +5,17 @@
     <h1 class="titleboxing">Register</h1>
     <% if (isLogin)
     {%>
-        <span>User <%=Request.Form["username"]%> registered successfully!</span>
+        <span style="margin-left: 5vw">User <%=Request.Form["username"]%> registered successfully!</span>
 
   <%}%>
     <% if (isDuplicate)
       {%>
-        <span>Username already taken! Please try a different username.</span>
+        <span style="margin-left: 5vw">Username already taken! Please try a different username.</span>
 
     <%}%>
     <% if (isEmpty)
       {%>
-        <span>Either Username or Password are empty! Please try again.</span>
+        <span style="margin-left: 5vw">Either Username or Password are empty! Please try again.</span>
 
     <%}%>
     <form method="post" action="Registration.aspx">

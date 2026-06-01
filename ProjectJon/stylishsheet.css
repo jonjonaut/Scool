@@ -189,32 +189,6 @@ body {
     animation: fadeIn 1s linear forwards;
     animation-delay: 7s;
 }
-.causewhynot {
-    animation: 
-        move 3s linear infinite,
-        horizontal-bounce 3.141s infinite alternate linear,
-        vertical-bounce 1.414s infinite alternate linear;
-}
-
-@keyframes horizontal-bounce {
-    from {
-        margin-left: 0vw;
-    }
-    to {
-        margin-left: 85.6vw;
-    }
-}
-
-@keyframes vertical-bounce {
-    from {
-        margin-top: 0vh;
-    }
-    to {
-        margin-top: 80.5vh;
-    }
-}
-
-
 
 @keyframes fadeIn {
     from {
